@@ -9,6 +9,7 @@ Can be added :
 swagger UI
 logging
 more unit tests
+nginx webserver
 kubernetes 
 
 $pipenv shell
