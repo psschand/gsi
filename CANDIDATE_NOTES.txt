@@ -1,0 +1,28 @@
+pipenv update
+pipenv lock --requirements > requirements.txt
+docker system prune
+
+I was not sure about task 5,need more clarity on the question, though code is partially given.
+
+
+Can be added :
+swagger UI
+logging
+more unit tests
+
+$pipenv shell
+
+>>> to run tests locally
+invoke test
+
+>>> to run application locally
+invoke run
+
+to bring up the container
+>>>docker-compose up
+
+>>>To run tests on Docker
+docker exec -it container-ID bash
+then run "python -m unittest discover" or "pytest"
+
+then run "flake8" for code analysis
