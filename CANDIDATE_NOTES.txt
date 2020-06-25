@@ -12,17 +12,24 @@ more unit tests
 
 $pipenv shell
 
->>> to run tests locally
-invoke test
 
 >>> to run application locally
-invoke run
+$ invoke run
+
+>>> to run tests locally
+$ invoke test
+
+>>> to run static code analysis locally
+$ flake8
+
+to build the container
+>>>docker-compose build 
 
 to bring up the container
 >>>docker-compose up
 
->>>To run tests on Docker
-docker exec -it container-ID bash
-then run "python -m unittest discover" or "pytest"
+To run tests on Docker
+>>>docker exec -it container-ID bash
 
+then run "python -m unittest discover" or "pytest"
 then run "flake8" for code analysis
